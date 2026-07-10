@@ -121,3 +121,4 @@ Frontend runs on http://localhost:3000
 - Phase 3: Instagram advanced insights (reel views, story reach)
 - Phase 4: Deploy to Render (backend) + Vercel (frontend)
 - Phase 5: Custom domain for shareable links
+ 
