@@ -22,7 +22,6 @@ app.add_middleware(
     allow_origins=[
         os.getenv("FRONTEND_URL", "http://localhost:3000"),
         "http://localhost:3000",
-        "https://media-kit-tan.vercel.app",
         "https://influencerskit.netlify.app",
         "https://media-kit-izqd.onrender.com",
     ],
