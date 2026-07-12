@@ -155,7 +155,7 @@ async def get_youtube_stats(user_id: str, db: AsyncSession = Depends(get_db)):
             setattr(cached_stats, key, value)
         # Reset fetched_at so cache timer restarts
         from datetime import datetime, timezone
-        cached_stats.fetched_at = datetime.now(timezone.utc)
+        cached_stats.fetched_at = datetime.utcnow()
     else:
         cached_stats = YoutubeStats(user_id=user_id, **fresh_data)
         db.add(cached_stats)
